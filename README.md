@@ -32,7 +32,7 @@ Web-based HL7 FHIR data validator with support for Japanese Implementation Guide
 ## Prerequisites
 
 - Python 3.8+
-- Java 11+ (for FHIR Validator CLI)
+- Java 17+ (for FHIR Validator CLI; the Docker image includes the required Java runtime)
 
 ## Getting Started
 
