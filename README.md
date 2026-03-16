@@ -36,17 +36,30 @@ Web-based HL7 FHIR data validator with support for Japanese Implementation Guide
 
 ## Getting Started
 
-```bash
-cd backend && pip install -r requirements.txt
-python app.py
-```
-
-### Docker
+The recommended way to run the application locally is via Docker, which sets up
+the expected directory layout (including `/app/validator-data`) for you.
 
 ```bash
 docker build -t fhir-validator-web .
 docker run -p 5000:5000 fhir-validator-web
 ```
+
+### Running the backend without Docker (development only)
+
+If you want to run the backend directly on your host (for example, when
+developing), you can do:
+
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
+
+Note: The backend currently expects its application root to be `/app` and
+resolves the `validator-data/` directory relative to that path, mirroring the
+Docker container layout. To run it reliably outside Docker, ensure that this
+directory structure and required data are available on your system, or prefer
+using the Docker-based workflow above.
 
 ## License
 
