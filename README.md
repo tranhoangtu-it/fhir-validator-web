@@ -9,7 +9,7 @@ Web-based HL7 FHIR data validator with support for Japanese Implementation Guide
 ## Features
 
 - Validate FHIR resources against standard and custom profiles
-- Support for Japanese FHIR IGs: JP-Core, JP Terminology, JP ECS CLINS
+- Support for Japanese FHIR IGs: JP-Core, JP-FHIR Terminology, JP-eCSCLINS
 - Web UI for easy resource validation
 - REST API for programmatic access
 - Docker deployment
@@ -19,8 +19,8 @@ Web-based HL7 FHIR data validator with support for Japanese Implementation Guide
 | IG | Description |
 |----|-------------|
 | JP-Core | Japan Core FHIR profiles |
-| JP Terminology | Japanese medical terminology |
-| JP ECS CLINS | Clinical information sharing |
+| JP-FHIR Terminology | Japanese medical terminology |
+| JP-eCSCLINS | Clinical information sharing |
 
 ## Tech Stack
 
